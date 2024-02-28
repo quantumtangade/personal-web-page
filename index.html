@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./academicons-1.9.2/css/academicons.min.css"/>
+    <script src="scripts/loader.js"></script>
+    <title>Manu S Pillai</title>
+  </head>
+  <body onLoad="scrollDiv_init(); loadMain();">
+      <div class="main">
+        <div class="header">
+            <div id="title">
+                <div id="name">Shrikant Tangade </div>
+                <div id="worktitle">Post-Doc Fellow @ SPRITZ Research Group, University of Padova</div>
+            </div>
+            <div id="nav-bar">
+                <div onclick="toggle_menu()" id="nav-button">
+                    Menu <i id="mailicon" style="display: inline; margin-left: 1px;" class="fa fa-angle-down"></i>
+                </div>
+                <div id="nav-item">
+                    <div style="border-bottom: 2px solid;" onclick="location.href='/index.html'">Home</div>
+                    <div onclick="location.href='/publications.html'">Publications</div>
+                    <div onclick="location.href='/projects.html'">Projects</div>
+                    <!-- <div onclick="location.href='/teachings.html'">Teachings</div> -->
+                    <div class="tooltip">Teachings
+                        <div class="tooltiptext">Coming Soon</div>
+                    </div>
+                    
+                    <!-- <div onclick="location.href='/blogs.html'">Blogs</div> -->
+                    <div class="tooltip">Achievements
+                        <div class="tooltiptext">Coming Soon</div>
+                    </div>
+                    <div onclick="window.open('https://drive.google.com/file/d/1MHfZMlEupd4EWCXr5T1uFzM2fK4VGRdE/view', '_blank')">CV</div>
+                    <div onclick="location.href='/contact.html'">Contact</div>
+                </div>
+                <script>
+                    function toggle_menu(){
+                        let mailicon = document.getElementById("mailicon");
+                        let menubar = document.getElementById("nav-item");
+                        if (mailicon.className === "fa fa-angle-up")
+                            mailicon.className = "fa fa-angle-down";
+                        else 
+                            mailicon.className = "fa fa-angle-up";
+                        menubar.classList.toggle("show");
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="container">
+            <div id="heading">
+                <div class="header-style">About Me</div>
+                <div class="body-style">
+                    <div>
+                        <div id="aboutme-image" style="display:flex; background-image: url('profile.jpg');" class="image box-shadow">
+                            <!-- <i style="margin: auto;" class="fa fa-spinner fa-spin fa-2x"></i> -->
+                        </div>
+                        <div class="social">
+                            <span onclick="window.open('https://scholar.google.com/citations?user=A-fK4TMAAAAJ&hl=en', '_blank')" class="hover-effect" style="color: #4081EC;">
+                                <i style="margin: 0 1rem; cursor: pointer;" class="ai ai-google-scholar ai-2x"></i>
+                            </span>
+                            <span onclick="window.open('https://github.com/manupillai308', '_blank')" class="hover-effect" style="color: #000000;">
+                                <i style="margin: 0 1rem; cursor: pointer;"  class="fa fa-github fa-2x"></i>
+                            </span>
+                            <span onclick="window.open('https://twitter.com/manupillai308', '_blank')" class="hover-effect" style="color: #1C98E5;">
+                                <i style="margin: 0 1rem; cursor: pointer;" class="fa fa-twitter fa-2x"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="aboutme-body" class="content">Shrikant Tangade (SM’18) received his Bachelor of Engineering degree
+in Computer Science and Engineering (Ramaiah Institute of
+Technology-MSRIT, Bengaluru), Master of Technology degree in
+Computer Network Engineering (R. V. College of Engineering,
+Bengaluru), and Ph. D. degree in Faculty of Electrical & Electronics
+Engineering Sciences, VTU, India in 2007, 2010, and 2020 respectively.
+ <br>He is currently Postdoctoral Research Fellow at the Department of
+Mathematics, University of Padova, Italy (2022-2024), working in the
+SPRITZ Security and Privacy Research Group and Adjunct Professor,
+University of Padova, Italy.<br><br>He is working as an Associate Professor in
+the Department of Computer Science and Engineering, CHRIST (Deemed to be University),
+Bengaluru, India. He is Secretary of IEEE Standard P1920.2 Working Group (V2V
+Communications for Unmanned Aircraft Systems).</div>
+                </div>
+            </div>
+            
+        <div class="whitespace"></div>
+        <div class="footer">
+            <div style="font-size: 1rem; margin-left: 11%; font-weight: 600; color: white;">Connect with me</div>
+            <div style="margin-left: auto; margin-right:11%;">
+                <span onclick="window.open('https://www.researchgate.net/profile/Manu-S-Pillai-2', '_blank')" style="color: white; margin: 0 0.5rem; cursor: pointer;">
+                    <i class="ai ai-researchgate ai-2x"></i>
+                </span>
+                <!-- <span style="color: white; margin: 0 0.5rem;">
+                    <i class="ai ai-stackoverflow ai-2x"></i>
+                </span>
+                <span style="color: white; margin: 0 0.5rem;">
+                    <i class="ai ai-orcid ai-2x"></i> -->
+                </span>
+                <span onclick="window.open('https://www.linkedin.com/in/manupillai308/', '_blank')" style="color: white; margin: 0 0.5rem; cursor: pointer;">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/autoscroll.js"></script>
+  </body>
+</html>
