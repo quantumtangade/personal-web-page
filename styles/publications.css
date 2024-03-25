@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Serif Pro', serif;
+    
     color: #606c38;
     
 }
@@ -38,6 +38,7 @@ body {
 
 .publication {
     margin-bottom: 1rem;
+    font-family: 'Source Serif Pro', serif;
     font-size: 0.8rem;
     color: #283618;
 }
