@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+    color: #606c38;
+    
+}
+
+.container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.header-style {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #283618;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+
+.body-style {
+    display: flex;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.publication {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #283618;
+}
+
+.publication p {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 550px) {
+    .container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .header-style {
+        font-size: 0.8rem;
+    }
+
+    .body-style {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}

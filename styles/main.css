@@ -103,6 +103,19 @@ body {
     text-align: center;
 }
 
+#quote {
+    font-size: 0.5rem;
+    font-family: 'Source Serif Pro', serif;
+    color: #606c38;
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+}
 .container {
     /* border: 1px solid green; */
     flex-grow: 10;
@@ -157,7 +170,7 @@ body {
     background-position:  center;
     background-size: cover;
     height: 400px;
-    min-width: 200px;
+    min-width: 300px;
     margin: 0.3rem;
     flex-shrink: 0; 
 }
