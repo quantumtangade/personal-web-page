@@ -168,8 +168,8 @@ body {
     background-repeat: no-repeat;
     background-position:  center;
     background-size: cover;
-    height: 360px;
-    min-width: 260px;
+    height: 340px;
+    min-width: 240px;
     margin: 0.3rem;
     flex-shrink: 0; 
 }
