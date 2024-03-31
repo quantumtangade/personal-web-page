@@ -97,7 +97,7 @@ body {
 }
 
 #worktitle {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-family: 'Source Serif Pro', serif;
     color: #606c38;
     text-align: center;
@@ -171,7 +171,7 @@ body {
     height: 340px;
     min-width: 240px;
     margin: 0.3rem;
-    flex-shrink: 0; 
+    /*flex-shrink: 0;*/ 
 }
 
 
@@ -192,46 +192,6 @@ body {
 
 
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 10px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 0.0rem;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(0,0,0,0.6);
-}
-
-/* Number text (1/3 etc) */
-
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 1px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -262,23 +222,7 @@ ul li {
     max-width: fit-content;
     margin: 10px;
 }
-@keyframes pulsate {
-    0% { 
-        opacity: 1.0;
-      background-color: yellow;
-      color:red;
-    }
-    50% { 
-        opacity: 1.0;
-      background-color: red;
-      color: yellow;
-    }
-    100% { 
-        opacity: 1.0;
-      background-color: yellow;
-      color: red;
-    }
-}
+
 
 #nav-item > div:hover {
     border-bottom: 2px solid;

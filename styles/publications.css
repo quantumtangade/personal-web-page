@@ -1,9 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
 body {
     margin: 0;
     padding: 0;
     color: #606c38;
-    
 }
+
 
 
 .container {
@@ -16,13 +23,6 @@ body {
     height: fit-content;
 }
 
-.header-style {
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: #283618;
-    margin: 0 auto;
-    margin-bottom: 2.5rem;
-}
 
 .body-style {
     display: flex;
@@ -35,16 +35,19 @@ body {
     height: fit-content;
 }
 
+    
 .publication {
     margin-bottom: 0.5rem;
     font-family: 'Source Serif Pro', serif;
     font-size: 0.8rem;
-    color: #283618;
+    color: #000000;
 }
 
+/*
 .publication p {
     margin-bottom: 0.5rem;
 }
+*/
 
 @media (max-width: 550px) {
     .container {
