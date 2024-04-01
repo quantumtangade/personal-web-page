@@ -46,7 +46,19 @@
                 <!-- <div onclick="location.href='/contact.html'">Contact</div>-->
                 
             </div>
-            
+            <script>
+              function toggle_mail() {
+              var mailid = document.getElementById("mailid");
+              var mailicon = document.getElementById("emailicon");
+              if (mailid.style.visibility === "hidden") {
+                  mailid.style.visibility = "visible";
+                  mailicon.className = "fa fa-angle-up";
+              } else {
+                  mailid.style.visibility = "hidden";
+                  mailicon.className = "fa fa-angle-down";
+              }
+            }
+        </script>
         </div>
     </div>
    <!-- <div class="container">
@@ -92,20 +104,6 @@
               </div>
             </div>
         </div>
-
-        <script>
-              function toggle_mail() {
-              var mailid = document.getElementById("mailid");
-              var mailicon = document.getElementById("emailicon");
-              if (mailid.style.visibility === "hidden") {
-                  mailid.style.visibility = "visible";
-                  mailicon.className = "fa fa-angle-up";
-              } else {
-                  mailid.style.visibility = "hidden";
-                  mailicon.className = "fa fa-angle-down";
-              }
-            }
-        </script>
         
     </div>
     <div class="whitespace"></div>
