@@ -18,12 +18,15 @@
 <body onLoad="scrollDiv_init(); loadMain();">
 <div class="main">
     <div class="header">
+      
         <div id="title">
             <div id="name">Shrikant Tangade </div>
             <div id="worktitle"> <small><b>Marie Skłodowska-Curie Actions (MSCA) Seal of Excellence - 2023 Awardee</b> 
             <br>Postdoctaral Research Fellow, <small><i>SPRITZ Security & Privacy Research Group, University of Padova, Italy</i></small> 
-            <br>Associate Professor, <small><i>Department of Computer Science and Engineering, CHRIST University, Bengaluru, India</i></small></small></div>
+            <br>Associate Professor, <small><i>Department of Computer Science and Engineering, CHRIST University, Bengaluru, India</i></small></small>
+            </div>
         </div>
+        
         <div id="nav-bar">
             <div onclick="toggle_menu()" id="nav-button">
                 Menu <i id="mailicon" style="display: inline; margin-left: 1px;" class="fa fa-angle-down"></i>
@@ -44,9 +47,18 @@
                 <div onclick="location.href='Quotes.html'">Quotes</div>
                 <div onclick="location.href='pictures.html'">Pictures</div>
                 <!-- <div onclick="location.href='/contact.html'">Contact</div>-->
-                
             </div>
-            
+             <script>
+                    function toggle_menu(){
+                        let mailicon = document.getElementById("mailicon");
+                        let menubar = document.getElementById("nav-item");
+                        if (mailicon.className === "fa fa-angle-up")
+                            mailicon.className = "fa fa-angle-down";
+                        else
+                            mailicon.className = "fa fa-angle-up";
+                        menubar.classList.toggle("show");
+                    }
+                </script>
         </div>
     </div>
    <!-- <div class="container">
