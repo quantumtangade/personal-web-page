@@ -58,7 +58,7 @@ body {
     justify-content: space-around;
     padding-left: 1em;
     padding-right: 1em;
-    width: 95vh;
+    width: 105vh;
     color: #BC6C25;
 }
 
@@ -73,7 +73,7 @@ body {
     display: none;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
     #nav-button {
         display: block;
         margin-bottom: 0.5rem;
@@ -85,7 +85,7 @@ body {
         display: none;
     }
     #nav-item > div {
-        margin: 0.2rem 0;
+        margin: 0.4rem 0;
     }
 
     #nav-bar .show {
