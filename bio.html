@@ -1,111 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio - Shrikant Tangade</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/publications.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./academicons-1.9.2/css/academicons.min.css"/>
-</head>
-<body>
-    <div class="main">
-        <div class="header">
-            <div id="title">
-                <div id="name">Shrikant Tangade </div>
+    
+    <title>Shrikant Tangade</title>
+  </head>
+
+<body onLoad="scrollDiv_init(); loadMain();">
+<div class="main">
+    <div class="header">
+        <div id="title">
+            <div id="name">Shrikant Tangade </div>
             <div id="worktitle"> <small><b>Marie Skłodowska-Curie Actions (MSCA) Seal of Excellence - 2023 Awardee</b> 
             <br>Postdoctaral Research Fellow, <small><i>SPRITZ Security & Privacy Research Group, University of Padova, Italy</i></small> 
             <br>Associate Professor, <small><i>Department of Computer Science and Engineering, CHRIST University, Bengaluru, India</i></small></small></div>
+        </div>
+        <div id="nav-bar">
+            <div onclick="toggle_menu()" id="nav-button">
+                Menu <i id="mailicon" style="display: inline; margin-left: 1px;" class="fa fa-angle-down"></i>
             </div>
-            <div id="nav-bar">
-                <div onclick="toggle_menu()" id="nav-button">
-                    Menu <i id="mailicon" style="display: inline; margin-left: 1px;" class="fa fa-angle-down"></i>
-                </div>
-                <div id="nav-item">
-                    <div onclick="location.href='index.html'">Home</div>
-                    <div onclick="location.href='research.html'">Research</div>
-                    <div onclick="location.href='publications.html'">Publications</div>
-                    <div onclick="location.href='collaborations.html'">Collaborations</div>
-                    <div onclick="location.href='activities.html'">Activities</div>
-                    <div onclick="location.href='teaching.html'">Teachings</div>
+            <div id="nav-item">
+                <div style="border-bottom: 2px solid;" onclick="location.href='index.html'">Home</div>
+                <div onclick="location.href='research.html'">Research</div>
+                <div onclick="location.href='publications.html'">Publications</div>
+                <div onclick="location.href='collaborations.html'">Collaborations</div>
+                <div onclick="location.href='activities.html'">Activities</div>
+                <div onclick="location.href='teaching.html'">Teachings</div>
                     
                     <!--<div class="tooltip">Teachings
                         <div class="tooltiptext">Coming Soon</div> 
-                    </div> -->
-                    <div onclick="location.href='bio.html'">Bio & CV</div>
-                    <!-- <div onclick="window.open('https://drive.google.com/file/d/1Q6AodRHJD3Ebf-ajjuKTUrsItchifX5F/view?usp=sharing', '_blank')">CV</div> -->
-                    <div onclick="location.href='Quotes.html'">Quotes</div>
-                    <div onclick="location.href='pictures.html'">Pictures</div>
-                    <!-- <div onclick="location.href='/contact.html'">Contact</div> -->
-        
-                </div>
-                <script>
-                    function toggle_menu(){
-                        let mailicon = document.getElementById("mailicon");
-                        let menubar = document.getElementById("nav-item");
-                        if (mailicon.className === "fa fa-angle-up")
-                            mailicon.className = "fa fa-angle-down";
-                        else
-                            mailicon.className = "fa fa-angle-up";
-                        menubar.classList.toggle("show");
-                    }
-                </script>
+                </div>-->
+                <div onclick="location.href='bio.html'">Bio & CV</div>
+                <!-- <div onclick="window.open('https://drive.google.com/file/d/1Q6AodRHJD3Ebf-ajjuKTUrsItchifX5F/view?usp=sharing', '_blank')">CV</div> -->
+                <div onclick="location.href='Quotes.html'">Quotes</div>
+                <div onclick="location.href='pictures.html'">Pictures</div>
+                <!-- <div onclick="location.href='/contact.html'">Contact</div>-->
+                
             </div>
-        </div>
-        <div class="container">
-            <div id="heading">
-               <!-- <div class="header-style">Publications</div>-->
-                <div class="body-style">
-
-                    <h3>Ph.D. Students</h3>
-                    <div class="publication">
-                       <br> <p>[J3]. Shrikant Tangade, S. S. Manvi, and P. Lorenz, “Trust Management Scheme Based on Hybrid Cryptography for Secure Communications in VANETs”, IEEE Transactions on Vehicular Technology, Vol. 69, No. 5, May. 2020. </p> <br>
-                    
-                        <p>[J2]. Shrikant Tangade, S. S. Manvi, and P. Lorenz, “Decentralized and scalable privacy-preserving authentication scheme in VANETs,” IEEE Transactions on Vehicular Technology, Vol. 67, No. 9, pp. 8647-8655, Sept., 2018</p> <br>
-                    
-                        <p>[J1]. S. S. Manvi and Shrikant Tangade, "A survey on authentication schemes in VANETs for secured communication", Elsevier Journal on Vehicular Communications, vol. 9, pp. 19-30, Jul. 2017. </p>
-                    </div>
-
-                    <h3>Master Students</h3>
-                    <div class="publication">
-                       <br> <p>[C1] Shrikant Tangade, R. A. Kumaar, S. Malavika, S. Monisha, F. Azam, "Detection of Malicious Nodes in Flying Ad-hoc Network with Supervised Machine Learning", in 2022 Third International Conference on Smart Technologies in Computing, Electrical and Electronics (ICSTCEE), pp. 1-5, Dec. 2022.</p> <br>
-
-                        <p> [C2] F. Azam, A. Biradar, N. Priyadarshi, S. Kumari, and Shrikant Tangade, "A Review of Blockchain Based Approach for Secured Communication in Internet of Vehicle (IoV) Scenario," in Proc. 2021 Second International Conference on Smart Technologies in Computing, Electrical and Electronics (ICSTCEE), pp. 1-6, Feb. 2022. </p> <br>
-
-                        <p>[C3] F. Azam, A. Biradar, N. Priyadarshi, S. Kumari, D. Almakhles and Shrikant Tangade, "A Framework for Secured Dissemination of Messages in Internet of Vehicle (IoV) Using Blockchain Approach," 2021 IEEE International Conference on Mobile Networks and Wireless Communications (ICMNWC), pp. 1-6, Jan. 2022.</p> <br>
-
-                        <p>[C4] Shrikant Tangade, S. S. Manvi, and S. Hassan, “A deep learning based driver classification and trustcomputation
-                            in VANETs”, in Proc. 2019 IEEE 90th Vehicular Technology Conference:VTC2019-Fall, Honolulu, Hawaii, USA, pp. 1-6, Nov. 2019.</p> <br>
-
-                        <p>[C5] Shrikant Tangade and S. S. Manvi, “CBTM: Cryptography based trust management scheme for secure vehicular communications”, in Proc. 15th International Conference on Control, Automation, Robotics and Vision, (ICARCV), Singapore, pp. 325-330, Dec. 2018.</p><br>
-
-                    </div>
-
-                    <!-- Add more conference and workshop papers as needed -->
-                    <h3>Bachelor Students</h3>
-                    <div class="publication">
-                       <br> <p>[BC1] S. S. Manvi and Shrikant Tangade, "Blockchain-Based Authentication and Trust Computation Security Solution for Internet of Vehicles (IoV)", Applications of Blockchain and Big IoT Systems: Digital Solutions for Diverse Industries, Book Chapter, CRC Press, Aug. 2022.</p> <br>
-                    </div>
-                    <!-- Add more book chapters as needed -->
-                    <h3>Other</h3>
-                    <div class="publication">
-                       <br> <p>[P1] Shrikant Tangade, S. S. Manvi, P. Vijapur, “Connection of Things (CoT) based Smart Add-On Plug Version-1 for Home/Office Automation”, App. No. 201741008756, Granted Indian patent, Dec. 2023.</p> <br>
-                    </div> 
-                    <!-- Add more patents as needed -->
-                    
-                    <!-- Add more other publications as needed -->
-                </div>
-            </div>
-        </div>
-        <div class="whitespace"></div>
-        <div class="footer">
-            <!-- Footer Content Goes Here -->
+            
         </div>
     </div>
+   <!-- <div class="container">
+        <div id = "quote" class="quote"><i>Fall in love with some activity, and do it! Nobody ever figures out what life is all about, and it doesn't matter. Explore the world. Nearly everything is really interesting if you go into it deeply enough. Work as hard and as much as you want to on the things you like to do the best. Don't think about what you want to be, but what you want to do. Keep up some kind of a minimum with other things so that society doesn't stop you from doing anything at all. (- Richard P. Feynman) </i></div> -->
+        <div id="heading">
+           <!-- <div class="header-style">About Me</div> -->
+            <div class="body-style">
+                <div>
+                    <div id="aboutme-image" style="display:flex; background-image: url('Profile2.jpg');" class="image box-shadow">
+                        <!-- Profile Image -->
+                     
+                    </div>
+                   
+                    <div class="social">
+                        <span onclick="window.open('https://scholar.google.com/citations?user=oL24HkkAAAAJ&hl=en&oi=ao', '_blank')" class="hover-effect" style="color: #000000;">
+                            <i style="margin: 0 1rem; cursor: pointer;" class="ai ai-google-scholar ai-2x"></i>
+                        </span>
+                        <span onclick="window.open('https://www.linkedin.com/in/shrikant-tangade-b764a925/', '_blank')" class="hover-effect" style="color: #000000;">
+                            <i style="margin: 0 1rem; cursor: pointer;" class="fa fa-linkedin fa-2x"></i>
+                        </span>
+                        <span onclick="window.open('https://www.researchgate.net/scientific-contributions/Shrikant-Tangade-2026724236', '_blank')" class="hover-effect" style="color: #000000; margin: 0 0.5rem; cursor: pointer;">
+                                <i class="ai ai-researchgate ai-2x"></i>
+                        </span>
+                    </div>
+                
+                </div>
+                <div id="aboutme-body" class="content">Shrikant Tangade (SM’18) received his Bachelor of Engineering degree in Computer Science and Engineering (Ramaiah Institute of Technology-MSRIT, Bengaluru), Master of Technology degree in Computer Network Engineering (R. V. College of Engineering, Bengaluru), and Ph. D. degree in Faculty of Electrical & Electronics Engineering Sciences, VTU, India in 2007, 2010, and 2020 respectively.<br><br>
+
+               He is currently Postdoctoral Research Fellow at the Department of Mathematics, University of Padova, Italy (2022-2024), working in the <a href="https://spritz.math.unipd.it/">SPRITZ Security and Privacy Research Group and Adjunct Professor, University of Padova, Italy</a>.<br><br>
+
+                He is working as an Associate Professor in the <a href="https://m.christuniversity.in/campus/Bangalore%20Kengeri%20Campus/">Department of Computer Science and Engineering, CHRIST (Deemed to be University), Bengaluru, India.</a> He is Secretary of IEEE Standard P1920.2 Working Group (V2V Communications for Unmanned Aircraft Systems). <br><br>
+
+                 Please feel free to reach out to me to collaborate or have questions!</div>
+
+               <div class="contact-btn-container">
+                
+                  <div class="contact-btn" onclick="toggle_mail()">
+                    Email<i id="emailicon" style="display: inline; margin-left: 5px;" class="fa fa-angle-down"></i>
+                  </div>
+
+               <div id="mailid" style="bottom: 10px; margin: 0.5rem auto; visibility: hidden;font-size:0.9rem; position: static;">
+                  drstangade[at]gmail.com
+              </div>
+            </div>
+        </div>
+
+        <script>
+              function toggle_mail() {
+              var mailid = document.getElementById("mailid");
+              var mailicon = document.getElementById("emailicon");
+              if (mailid.style.visibility === "hidden") {
+                  mailid.style.visibility = "visible";
+                  mailicon.className = "fa fa-angle-up";
+              } else {
+                  mailid.style.visibility = "hidden";
+                  mailicon.className = "fa fa-angle-down";
+              }
+            }
+        </script>
+        
+    </div>
+    <div class="whitespace"></div>
+    <div class="footer">
+        <!-- Footer Content Goes Here -->
+    </div>
+</div>
+
 </body>
 </html>
+
+
